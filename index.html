@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>razval | Здарова!! За фуллом? Тогда на Бусти!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            /* Фон теперь заменен на ваше изображение */
+            background-image: url('./img/background.jpg'); /* Укажите правильный путь к вашему изображению */
+            background-position: center; /* Центрирование изображения */
+            background-repeat: no-repeat; /* Изображение не повторяется */
+            background-size: cover; /* Растягивание изображения на весь экран */
+            color: white;
+        }
+
+        .container {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            color: black;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .profile {
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 100%; /* Округление рамки */
+            border: 1px solid #333; /* Толщина рамки увеличена до 6 пикселей */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Добавлена тень */
+        }
+
+        .profile h1 {
+            margin: 10px 0 5px;
+            font-size: 1.8rem;
+        }
+
+        .profile p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .link {
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px 0;
+            transition: background 0.3s, transform 0.2s;
+            border: 0.5px solid black; /* Добавляем черную обводку */
+        }
+
+        .link:hover {
+            transform: scale(1.05);
+        }
+
+        .link:nth-child(1) {
+            background: #c5dae8;
+            color: black;
+            font-weight: bold;
+        }
+
+        .link:nth-child(2) {
+            background: #ef7429;
+            color: black;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .profile h1 {
+                font-size: 1.5rem;
+            }
+
+            .profile p {
+                font-size: 0.9rem;
+            }
+
+            .link {
+                font-size: 0.9rem;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="./img/avatar.jpeg" alt="razval">
+            <h1>razval</h1>
+            <p>Здарова!! За фуллом? Тогда на Бусти!</p>
+        </div>
+
+        <div class="links">
+            <a href="https://dtf.ru/u/2300011-razval" class="link">DTF</a>
+            <a href="https://boosty.to/ah3ga0" class="link">Boosty</a>
+        </div>
+    </div>
+</body>
+</html>
